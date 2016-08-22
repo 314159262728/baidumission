@@ -5,6 +5,18 @@
 	table tr,td,th{
 		border:1px solid gray;
 	}
+	h3{
+		 color:gray;
+	}
+span{
+	font-size:12px;
+	color:gray;
+}
+
+form label{
+	display: inline-block;
+}
+
 </style>
 
 
@@ -24,14 +36,16 @@
 <article>
 	<h2>文章一级标题</h2>
 	<h3>文章二级标题</h3>
-	<span>文章作者&nbsp;文章发表时间</span>
+	<span >文章作者&nbsp;文章发表时间</span>
 	<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落<br />
 	这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com">这里有一个链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长</p>
 	<img src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/bd_logo1_31bdc765.png"/>
 	<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落<br />
 	这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com">这里有一个链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长</p>
-	<h2>另一篇文章一级标题</h2>
-	<h2>文章二级标题</h2>
+</article>
+<article>
+<h2>另一篇文章一级标题</h2>
+	<h3>文章二级标题</h3>
 	<span>文章作者&nbsp;文章发表时间</span>
 	<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落<br />
 	这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com">这里有一个链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长</p>
@@ -63,14 +77,14 @@
 </article>
 <article>
 	<h2>最后一篇文章一级标题</h2>
-	<h2>文章二级标题</h2>
+	<h3>文章二级标题</h3>
 	<span>文章作者&nbsp;文章发表时间</span>
 	<ol>
 		<li>排名1</li>
 		<li>排名1</li>
 		<li>排名1</li>
 	</ol>
-	<span>下面是一个表格，给表格加一个<code>corder="1"</code>好让你看出是一个表格</span>
+	<p>下面是一个表格，给表格加一个<code>corder="1"</code>好让你看出是一个表格</p>
 	<table>
 		<tr>
 			<th>表头</th>
@@ -101,34 +115,41 @@
 </article>
 <aside>
 	<h2>这里以后是一个侧栏，这是侧栏的标题</h2>
-	<h2>侧栏注册窗口标题</h2>
+	<h3>侧栏注册窗口标题</h3>
 	<form>
-	<label for="emailAdress">请输入邮箱地址</label>
-	<input type="text" id="emailAdress" name="emailAdress" value="这是一个文本输入框"/><br />
-	<p>邮箱地址请按要求格式输入</p>
+
+	<label for="emailAdress">请输入邮箱地址:</label>
+	<input type="text"  class="text" id="emailAdress" name="emailAdress" value="这是一个文本输入框"/><br />
+
+
+<span>邮箱地址请按要求格式输入</span><br />
+
 	<label for="password1">请输入密码：</label>
-	<input type="text" id="password1" name="password" value="这是一个文本输入框"/>
+	<input type="text" class="text" id="password1" name="password" value="这是一个文本输入框"/><br />
+
 	<label for="password2">请重复输入密码：</label>
-	<input type="text" name="password2" value="这是一个文本输入框"/><br />
-	<p>密码请为6-16位英文数字</p><br />
+	<input type="text" class="text" name="password2" value="这是一个文本输入框"/><br />
+<span>密码请为6-16位英文数字</span><br />
+
+
 	性别：
-	<input type="radio" name="sex" checked="checked" id="male"/>
+	<input type="radio"  class="text" name="sex" checked="checked" id="male"/>
 	<label for="male">男</label>
 	<input type="radio" name="sex"  id="female"/>
-	<label for="female">女</label>
+	<label for="female">女</label><br />
 	城市：
-	<select multiple="multiple">
+	<select   multiple="multiple">
 		<option value="北京" >北京</option>
 		<option value="武汉" selected="selected">武汉</option>
 		<option value="广州">广州</option>
-	</select>
-	爱好：
-	<input type="checkbox" name="hobby" value="科学">科学
+	</select><br/>
+爱好：
+	<input type="checkbox"  class="text" name="hobby" value="科学">科学
 	<input type="checkbox" name="hobby" value="运动">运动
-	<input type="checkbox" name="hobby" value="艺术">艺术
-	个人描述：
-	<textarea rows="4" cols="20" name="decoration" value="文本">在这里输入内容...</textarea>
-	<input type="button" name="submit" value="确认提交">
+	<input type="checkbox" name="hobby" value="艺术">艺术<br />
+	<label>个人描述：</label>
+	<textarea rows="4" class="text" cols="20" name="decoration" value="文本">在这里输入内容...</textarea><br />
+	<input type="button" name="submit" value="确认提交" style="width:100%;padding:red;">
 	</form>
 </aside>
 	版权所有@绮梦璇玑
