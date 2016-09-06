@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>模拟报纸排版</title>
+    <style media="screen">
+      body{
+        background-color: gray;
+        margin: 0px;
+        padding: 0px;
+      }
+      p{
+        margin: 0px;
+        padding: 0px;
+      }
+      .div{
+        margin-left: 50px;
+        margin-top: 50px;
+        background-color: white;
+        width: 980px;
+        height: 1386px;
+
+      }
+      .div1,.div2,.div3,.div4{
+        margin:0 44px 30px 44px;
+      }
+      .div11,.div12{
+        width: 110px;
+        height: 61px;
+        position: relative;
+
+      }
+      .div11{
+          background-color: red;
+          float: left;
+
+      }
+      .div12{
+        float: right;
+        color: #d45d5c;
+
+      }
+      .div1 p{
+        position: absolute;
+        bottom: 0px;
+        font-size:12px;
+
+      }
+      .div11 p{
+        font-family: 黑体;
+        color:#fff;
+
+      }
+      .div12 p{
+        width: 110px;
+        text-align: right;
+        color:#d45d5c;
+        font-family: 黑体;
+
+      }
+      .div1 hr{
+        margin: 0px;
+        clear: both;
+        height: 2px ;
+        border:none;
+        background-color: #93818c;
+        width: 892px;
+      }
+      .div2{
+        float: left;
+      }
+      .div21{
+        position: relative;
+        float:left;
+        width：641px;
+      }
+      .div2 .div21 .opacity-1,.opacity-2{
+        opacity: 0.5;
+        width: 191px;
+        height: 301px;
+        background: #72A664;
+        position: absolute;
+        top:0;
+      }
+
+      .div2 .div21 .opacity-2{
+          left: 450px;
+      }
+      .div2 .div22{
+
+        margin-left: 44px;
+        margin-top: 0px;
+        width:207px;
+        float: right;
+      }
+      .div2 .div22 hr{
+        clear:both;
+        height: 2px;
+        border:none;
+        border-top:1px solid #cc8091;
+        width: 203px;
+        margin: 0px;
+      }
+
+      .div3 .wh{
+        font-size: 16px;
+        text-transform: capitalize;
+        text-decoration: underline;
+        font-weight: bold;
+        margin: 0px;
+
+      }
+      .div3 .font{
+        font-size: 12px;
+        opacity: 0.7;
+        color: #231815;
+        font-family: 微软雅黑;
+      }
+      .div31,.div32,.div33{
+
+        height: 220px;
+        float: left;
+        margin-top: 20px;
+        margin-right: 20px;
+      }
+      .div31,.div32{
+        width: 220px;
+      }
+      .div33{
+        width: 140px;
+      }
+      .div33 span{
+        font-size: 12px;
+        font-family: 微软雅黑;
+        opacity: 0.7;
+        font-style: italic;
+        color: #cd4a48;
+      }
+      .div4{
+          clear:both;
+          width:892px;
+        }
+      .div41,.div42{
+        width: 414px;
+        margin: 0px;
+      }
+
+    .div42{
+      float: left;
+    }
+
+      .div43{
+        width:458px;
+        height: 275px;
+      }
+      .div43,.div44{
+        margin:0 0 20px 0;
+        padding: 0;
+        float:right;
+        position: relative;
+      }
+      .div43 div{
+        opacity: 0.5;
+        width: 458px;
+        height: 61px;
+        background: #72A664;
+        position: absolute;
+        bottom:0;
+      }
+      .div43 div .string1{
+        width:3px;
+        height: 44px;
+        background-color: #080;
+        opacity: 1;
+        position: absolute;
+        margin: 8px 426px 8px 30px;
+      }
+      .div44{
+      background-color: #DDD;
+      width:459px;
+      height: 318px;
+      position: relative;
+      }
+      .div44 ul li{
+        list-style-type: none;
+        line-height: 40px;
+        font-size: 16px;
+        margin: 0;
+        padding: 0;
+        font-family: 宋体;
+      }
+      .div44 em{
+        display: block;
+        float: left;
+        width: 0px;
+        height: 0px;
+        border:6px solid;
+        border-color: #DDD #DDD #fff #DDD;
+        margin-top: 8px;
+        margin-right: 10px;
+      }
+      .div44 .red{
+        width: 260px;
+        height: 160px;
+        background-color: red;
+        color:#fff;
+        font-family: 微软雅黑;
+        position: absolute;
+        bottom: 0;
+      }
+
+      .red_1{
+        height: 86px;
+        width: 3px;
+        background-color: #fff;
+        position: absolute;
+        bottom: 37px;
+        left:65px;
+      }
+      .red_2,.red_3{
+
+        height: 40px;
+        width: 180px;
+        float: right;
+      }
+      .red_2{
+        vertical-align: bottom;
+        margin-top: 40px;
+        font-size: 21px;
+        font-family: 黑体;
+        font-style: italic;
+        margin-bottom: 6px;
+      }
+      .red_3{
+        font-size: 12px;
+        color:#fff;
+        font-family: 黑体;
+      }
+
+      .right{
+        width: 169px;
+        height: 160px;
+        position: relative;
+        float: right;
+        right:15px;
+      }
+      .sp1{
+        width: 72px;
+        height: 30px;
+        margin: 0px;
+        padding: 0px;
+        color:#d45d5c;
+        font-size:72px;
+        position:absolute;
+        top:-10px;
+        right:138px;
+        font-family:黑体;
+      }
+      .sp2{
+        width: 72px;
+        height: 30px;
+        margin: 0px;
+        padding: 0px;
+        float:left;
+        color:#d45d5c;font-size:72px;font-family:黑体;
+        display: inline-block;
+        position: relative;
+        left:136px;
+        bottom:35px;
+      }
+      .text{
+        text-indent: 30px;
+        display: inline-block;
+        float:left;
+        line-height: 30px;
+
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="div">
+      <div class="div1">
+        <div class="div11">
+          <p>ife.baidu.com</p>
+        </div>
+        <div class="div12">
+          <p>2016.03</p>
+        </div>
+        <hr>
+      </div>
+      <div class="div2">
+        <div class="div21">
+          <img style="width:641px;height:301px;float:left;" src="http://img.lanrentuku.com/img/allimg/1510/14450496822450.jpg"  />
+          <div class="opacity-1"></div>
+          <div class="opacity-2"></div>
+        </div>
+        <div class="div22" >
+          <hr>
+          <p style=" color:#000;font-family:微软雅黑;
+          width:65px;
+          font-size:24px;
+          line-height:40px;
+          text-decoration:underline;
+          text-transform:capitalize;
+          font-variant:small-caps;">about</p>
+
+          <p style="color:#000;font-family:微软雅黑;
+          width:65px;
+          font-size:24px;
+          line-height:40px;
+          text-decoration:underline;
+          text-transform:capitalize;
+          font-variant:small-caps;">
+          technologe
+          </p>
+
+          <p style=" font-size:12px;color:#676767;font-family:楷体;">
+            <span style="text-transform:uppercase;">a</span>bout technologe about technologe about technologe
+          </p>
+          <p style="margin:0px;font-size:116px;color:#57b86b;font-family:微软雅黑;font-style:italic;float:left;">700</p>
+
+            <p style="width:80px;height55px;font-size:55px;color:#cc8091;font-family:微软雅黑; float:left;">
+              3.2
+            </p>
+            <p style="margin:22px 0 0 0;font-size:21px;height:21px;width:50px;color:#cc8091;font-family:微软雅黑;float:left;">
+              css
+            </p>
+            <p style=" font-size:12px;color:#cc8091;font-family:微软雅黑;float:left;">
+              csscsccscsccsccs
+
+          </p>
+        </div>
+      </div>
+      <div class="div3">
+      <div class="div31">
+
+          <p class="wh"style="color:#75b86b">
+            what
+          </p>
+          <p class="font">
+            前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端
+          </p>
+
+      </div>
+      <div class="div32">
+        <p class="wh" style="color:#d2994f;">
+          when
+        </p>
+        <p class="font">
+          前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端
+        </p>
+        </p>
+      </div>
+      <div class="div33">
+        <p class="wh" style="color:#cc7680;">
+          how
+        </p>
+        <p class="font" style="line-height:20px;">
+          前端前端前端前端<br >
+          前端前端前端前端前端<br >
+          前端前端前端<br >
+        </p>
+        <p class="font" style="line-height:16px;text-transform:capitalize;">
+          what······<span>40%</span><br >
+          what······<span>30%</span><br >
+          what······<span>30%</span><br >
+        </p>
+      </div>
+  </div>
+      <div class="div4">
+        <div class="div43"  >
+          <img src="http://image.tianjimedia.com/uploadImages/2015/129/56/J63MI042Z4P8.jpg" style="float:right;width:458px;height:275px;" />
+          <div >
+            <div class="string1"></div>
+            <span style="color:#fff;font-size:26px;font-family:微软雅黑;display:inline-block;padding-left:50px;width:122px;height:61px;line-height:61px;float:left;">前端技术</span>
+            <span style="color:#fff;font-style:italic;letter-spacing:2px;font-size:12px;font-family:微软雅黑;display:inline-block;padding-left:10px;padding-top:7px;width:122px;height:54px;line-height:54px;float:left;">前端技术前端技术</span>
+          </div>
+        </div>
+
+        <div class="div41" >
+          <p style="font-size:42px;text-transform:uppercase;color:#11456b;font-weight:bold;font-family:黑体;">
+            <span style="font-size:72px;color:#f5e327;font-family:黑体;font-style:italic;font-weight:bold">the</span> technology of front</p>
+            <p style="font-size:33px;color:#11456b;font-family:黑体;font-weight:bold;">
+              前端技术领域
+            </p>
+           <hr>
+        </div>
+        <div class="div42" >
+          <p style="font-size:70px;margin-right:5px;width:70px;height:90px;color:#f5e327;font-family:微软雅黑;float:left">前</p>
+          <p >
+            <img src="http://image.tianjimedia.com/uploadImages/2015/129/56/J63MI042Z4P8.jpg" style="margin:0;float:right;width:240px;clear:both;" />
+            <span style="font-size:12px;line-height:16px;opacity:0.7;">
+          端前端前端前端前端前端前前端前端前端前端前端前端前端前端前端前端前端端前端前端前端前端前端前端前前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端
+        </span>
+      </p>
+        </div>
+        <div class="div44">
+          <ul>
+            <li><em></em>端前前端前端前端前端前.....................<span style="font-size:12px;color:#5a5b5a;font-family:宋体;font-style:italic;text-align:right;">前端</span></li>
+              <li><em></em>端前前端前端前端前端前....................<span style="font-size:12px;color:#5a5b5a;font-family:宋体;font-style:italic;text-align:right;">前端前</span></li>
+                <li><em></em>端端前端前.................................<span style="font-size:12px;color:#5a5b5a;font-family:宋体;font-style:italic;text-align:right;">前端</span></li>
+          </ul>
+          <div class="red">
+            <p style="font-size:110px;float:left;">0</p>
+            <div class="red_1">      </div>
+            <p class="red_2">
+              ONE TWO THREE FOUR FIVE
+            </p>
+            <p class="red_3">
+              hello world  hello world hello world
+            </p>
+          </div>
+
+          <div class="right">
+            <p class="sp1" style="">“ </p>
+            <span  class="text">前段前端段前端ld前段前端ld前段前端ld前段前端ld前段前端ld前段前端ld
+
+          </span>
+            <span class="sp2" style="">”</span>
+          </div>
+
+        </div>
+      </div>
+<hr style="width:892px;height:2px;background-color:#93818c">
+<p style="float:right;font-size:12px;color:red;margin-right:44;">
+  ife.baidu.com
+</p>
+    </div>
+  </body>
+</html>
