@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      div{
+        margin: 0px;
+        padding: 0px;
+        border: 1px solid blue
+      }
+      body{
+padding-left: 400px;
+
+      }
+      .root{
+        width: 600px;
+        height: 100px;
+        display: flex;
+
+        margin-top: 200px;
+        justify-content:space-around;
+        align-items:center;
+      }
+      .child_1{
+        width: 290px;
+        height: 80px;
+        display: flex;
+        justify-content:space-around;
+        align-items:center;
+      }
+      .child_2{
+        width: 135px;
+        height: 60px;
+        display: flex;
+        justify-content:space-around;
+        align-items:center;
+      }
+      .child_3{
+        width: 58px;
+        height: 40px;
+      }
+      button{
+        width: 80px;
+        height: 40px;
+        margin-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="root">
+      <div class="child_1">
+        <div class="child_2">
+          <div class="child_3">
+
+          </div>
+          <div class="child_3">
+
+          </div>
+        </div>
+        <div class="child_2">
+          <div class="child_3">
+
+          </div>
+          <div class="child_3">
+
+          </div>
+        </div>
+      </div>
+      <div class="child_1">
+        <div class="child_2">
+          <div class="child_3">
+
+          </div>
+          <div class="child_3">
+
+          </div>
+        </div>
+        <div class="child_2">
+          <div class="child_3">
+
+          </div>
+          <div class="child_3">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <button type="button" name="button">前序</button>
+    <button type="button" name="button">中序</button>
+    <button type="button" name="button">后序</button>
+    <script src="task22.js">
+
+    </script>
+  </body>
+</html>
