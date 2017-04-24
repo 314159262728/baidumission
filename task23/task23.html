@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+        <script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+    <style media="screen">
+      div{
+        margin: 0px;
+        padding: 0px;
+        border: 1px solid blue;
+      }
+
+      .root{
+        width:100%;
+        height: 200px;
+        display: flex;
+        justify-content:space-around;
+        align-items:center;
+      }
+      .child_1{
+        display: flex;
+        justify-content:space-around;
+        align-items:center;
+      }
+      .child_2{
+
+        display: flex;
+        padding: 10px;
+        justify-content:space-around;
+        align-items:center;
+      }
+      .child_3{
+
+        padding: 10px;
+        margin-left: 5px;
+        justify-content:space-around;
+        align-items:center;
+      }
+      .child_4{
+
+        padding: 10px;
+        margin-left: 5px;
+
+      }
+      button{
+        width: 100px;
+        height: 40px;
+        margin-top: 30px;
+      }
+      textarea{
+        margin-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="root">
+      Super
+      <div onclick="divonclick()"  class="child_1" style="width:45%;height:190px">
+        Cat
+        <div class="child_2">
+          Apple
+          <div class="child_3">
+            Pear
+          </div>
+          <div class="child_3">
+            Pig
+          </div>
+          <div class="child_3">
+            Cola
+          </div>
+          <div class="child_3">
+            Soccer
+          </div>
+        </div>
+        <div class="child_2">
+          Phone
+        </div>
+        <div class="child_2">
+          <div class="child_3">
+            Book
+          </div>
+          <div class="child_3">
+            School
+          </div>
+        </div>
+      </div>
+      <div class="child_1"  style="width:45%;height:190px">
+        Note
+        <div class="child_2">
+          Human
+          <div class="child_3">
+            Code
+          </div>
+          <div class="child_3">
+            Operate
+          </div>
+          <div class="child_3">
+            Man
+          </div>
+        </div>
+        <div class="child_2">
+          Program
+          <div class="child_3">
+            Bement
+            <div class="child_4">
+              Cat
+            </div>
+          </div>
+          <div class="child_3">
+            Glass
+          </div>
+        </div>
+      </div>
+      <div class="child_1" style="width:5%;height:190px;">
+        Fish
+      </div>
+    </div>
+    <button type="button" name="button">深度优先遍历</button>
+    <button type="button" name="button">广度优先搜索</button>
+    <input id="text" type="text" name="" value="">
+    <button type="button" name="button">深度优先搜索</button>
+    <button type="button" name="button">广度优先搜索</button>
+    <button id="delete" type="button" name="button">删除</button>
+    <br>
+    <textarea name="name" rows="8" cols="80"></textarea>
+    <button id="add" type="button" name="button">添加</button>
+    <script src="task23.js">
+    </script>
+  </body>
+</html>
