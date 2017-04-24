@@ -1,0 +1,628 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: "黑体";
+
+}
+header{
+  background-color:rgb(34,138,191);
+  height: 50px;
+}
+header #img1{
+  margin-left: 40px;
+  margin-top: 8px;
+  float:left;
+}
+header .div{
+  float:right;
+  margin:10px 50px 10px auto;
+
+}
+header .div .search_box,img,p{
+  height: 30px;
+  float: left;
+  vertical-align: middle;
+  line-height: 30px;
+  color:white;
+  font-weight: bold;
+}
+header .div .search_box,#img2{
+  margin-top: 3px;
+  height: 25px;
+  weight: 25px;
+}
+header .div .search_box{
+  height: 30px;
+  margin-top: -2px;
+  margin-right: 20px;
+    position: relative;
+    clear:both;
+}
+header .div #img1{
+  padding-top:5px;
+  width: 20px;
+  height: 20px;
+}
+header .div .search_box .input_box{
+  height: 30px;
+  border-radius: 15px;
+  width: 300px;
+  padding-left: 40px;
+
+}
+header .div .search_box .button{
+  border:none;
+  outline: none;
+  position: absolute;
+  top:10px;
+  left:13px;
+  background-image: url("task_1_9_1.search.png");
+  width: 20px;
+  background-repeat: no-repeat;
+  background-color: white;
+}
+header .div .search_box .button:hover{
+  outline: none;
+}
+aside {
+  background-color: rgb(42, 46, 61);
+  width: 20%;
+  height: 1018px;
+  float:left;
+}
+aside .left1{
+  clear:both;
+  height: 80px;
+}
+aside .left1 #img3{
+  width:60px;
+  height: 50px;
+  margin:20px  10px 10px 50px;
+}
+aside .left1 p{
+  padding-top: 30px;
+  color:#f6f5f5;
+  font-size: 16px;
+
+}
+aside .left2{
+  width: 100%;
+  height: 32px;
+  padding: 0px;
+}
+aside .left21,.left23{
+  width: 49%;
+  float: left;
+    height: 32px;
+}
+aside .left22{
+  margin-top: 10px;
+  float:left;
+  width: 1%;
+  height: 30px;
+  background-color: #6e8095;
+}
+aside .left2 .left21 p{
+  padding-right: 20px;
+  padding-left: 65px;
+}
+aside .left2 .left23 p{
+  padding-right: 60px;
+  padding-left: 20px;
+}
+aside .left2 .left21 p,.left23 p{
+  height: 50%;
+  width: 100%;
+  color:#6e8095;
+}
+
+aside .left2  p#p1{
+  font-size: 16px;
+  vertical-align:bottom;
+  font-weight: bold;
+}
+aside .left2 p#p2{
+  font-size: 10px;
+  vertical-align: top;
+}
+aside .left3{
+  width: 100%;
+  margin-top: 30px;
+
+}
+aside .left3 ul{
+
+}
+aside .left3 ul>li{
+  font-size: 12px;
+  padding-left: 55px;
+}
+aside .left3 ul>li ul>li{
+    padding-left: 20px;
+}
+aside .left3 ul li a{
+  text-decoration:none;
+  line-height: 30px;
+  color:#6e8095;
+}
+aside .left3 ul li a:hover{
+  color:#f6f5f5;
+}
+aside .left3 .report{
+  list-style: square inside url("task_1_9_1.report.png");
+  background-color:rgb(56,61,78);
+
+}
+aside .left3 .report .folder1{
+  list-style: square inside url("task_1_9_1.folder.png");
+
+}
+aside .left3 .report .folder1 img{
+  width: 8px;
+  height: 13px;
+  padding-top: 7px;
+  padding-right: 5px;
+}
+  aside .left3 .report .file1{
+    list-style: square inside url("task_1_9_1.file.png");
+  }
+
+aside .left3 .star{
+  list-style: square inside url("task_1_9_1.star.png");
+}
+aside .left3 .account{
+  list-style: square inside url("task_1_9_1.account.png");
+}
+aside .left3 .share{
+    list-style: square inside url("task_1_9_1.share.png");
+}
+.right{
+  background-color: rgb(238,237,236);
+  width: 80%;
+  float:right;
+  height: auto;
+}
+.right  .p1{
+  padding-left: 20px;
+  width: 100%;
+  height: 30px;
+  background-color: rgb(255,255,255);
+  color: rgb(183,183,183);
+  font-size: 12px;
+}
+.right  p span{
+  color:rgb(130,168,203);
+}
+.right>div,.p{
+  width: 86%;
+  margin-left: 7%;
+  margin-right: 7%;
+  clear:both;
+}
+.right .quary{
+  height: 80px;
+  margin-top: 45px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(221,222,224);
+}
+
+.right .quary .form div{
+  border: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  float: left;
+    height: 60px;
+}
+.right .quary .form .form1{
+  width: 20%;
+  text-align: center;
+
+  float: left;
+}
+.right .quary .form .form2{
+  width: 20%;
+  text-align: center;
+  background-image: url("task_1_9_1.arrows.png");
+  background-repeat: no-repeat;
+  background-position:123px 1px;
+}
+.right .quary .form .form2 label ,.form3 label{
+  display: block;
+
+}
+.right .quary .form label span{
+  color: rgb(183,183,183);
+}
+.right .quary .form .form3{
+  text-align: center;
+  width: 40%;
+}
+.right .quary .form .form3 #text{
+  width: 80px;
+}
+.right .quary .form .form4{
+  vertical-align: middle;
+}
+.right .quary .form  button{
+  width: 50px;
+  height: 30px;
+  background-color: rgb(56, 138, 193);
+  color: white;
+  border: none;
+  margin-top: 15px;
+  border-radius: 2px;
+}
+.right .price{
+
+  margin-top: 10px;
+  background-color: inherit;
+}
+.right .price .button1{
+  width: 4%;
+  height: 60px;
+  background-image: url(task_1_9_1.slip1.png);
+  float: left;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+.right .price .button2{
+  width:4%;
+  height: 60px;
+  background-image: url(task_1_9_1.slip1.png);
+  float: left;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate(180deg);
+}
+.right .price div{
+  float: left;
+}
+.right .price .box{
+  width:10%;
+  height: 60px;
+  margin:0 0.5%;
+  background-color: white;
+  padding-left: 1.5%;
+}
+
+.right .price .box:hover{
+  border-top: 3px solid  rgb(56, 138, 193);
+}
+.right .price .box p{
+  width: 60px;
+  padding-left: 0px;
+  color: #6e8095;
+}
+.right .price .box p span{
+  color: rgb(237, 115, 38);
+  font-size: 22px;
+}
+.right .price .box1{
+  margin-left: 0.5%;
+  width:16.5%;
+  height: 60px;
+  background-color: white;
+  background-position: center;
+}
+.right .price .box1 p{
+  width:50px;
+  height: 20px;
+  line-height: 20px;
+  background-image: url("task_1_9_1.history.png");
+  background-repeat: no-repeat;
+  background-position: -3px center;
+  padding: 20px 0 20px 40px;
+  color:#535353;
+  font-family: "微软雅黑";
+  font-size: 12px;
+
+}
+.right .statistic{
+margin-top: 10px;
+background-color: inherit;
+}
+.right  .p{
+padding-left: 0px;
+font-size: 16px;
+color: black;
+margin-top: 5px;
+
+}
+.right .statistic .sbox{
+  width: 22.5%;
+  height: 70px;
+  background-color: rgb(255,255,255);
+  margin-left: 3%;
+  float: left;
+  position: relative;
+}
+.right .statistic .sbox span{
+  display: block;
+  width: 50px;
+  float: left;
+  position: absolute;
+  left:5px;
+}
+.right .statistic .sbox .span1{
+  top:16px;
+  font-size: 14spx;
+}
+.right .statistic .sbox .span2{
+  top:38px;
+  color: rgb(183,183,183);
+  font-size: 10px;
+}
+.right .statistic .sonsbox{
+  float: right;
+  margin: -7px 10px 10px 0;
+  height: 50px;
+  width: 70px;
+
+}
+.right .project,.right .calendar{
+  height: 340px;
+  padding-top: 15px;
+}
+.right .project>div,.calendar >div{
+  border: 1px solid rgb(221,222,224);
+  border-radius: 5px;
+  height: 100%;
+}
+.right .project .pro_left{
+  width: 58%;
+  float: left;
+}
+.right .project .pro_right{
+  width: 40%;
+  float: right;
+}
+.right .project p,.right .calendar p{
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding-left: 5%;
+  width: 95%;
+  color: #aaaaaa;
+  font-size: 12px;
+  height:30px;
+  background-color: rgb(243,245,246);
+}
+.right .project .pro_left #content1{
+ display: none;
+}
+
+ .right .project .pro_left #content2{
+  display: none;
+}
+.right .project .pro_left #content1:target{
+  display: block;
+}
+.right .project .pro_left #content2:target{
+  display: block;
+}
+.right .project  .mainbody{
+  width: 80%;
+  height: 270px;
+  padding: 50px 10% 20px;
+  background-color: white;
+  border-radius: 5px;
+}
+.right .project .pro_left ul li {
+  width: 70px;
+  height: 30px;
+  background-color: rgb(236,236,239);
+  display:inline-block;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border: none;
+  margin: 0 1px;
+
+}
+.right .project .pro_left ul li:hover{
+  border-top: 2px solid  rgb(221,222,224);
+  border-left:  2px solid  rgb(221,222,224);
+  border-right:  2px solid  rgb(221,222,224);
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  top:2px;
+}
+.right .project .pro_left ul li a{
+  text-decoration: none;
+  color:#535353;
+  width: 60px;
+  line-height: 30px;
+  padding-left:9px;
+
+
+}
+.right .project .pro_left .mainbody #nav{
+  margin-top: 20px;
+}
+.right .project .pro_left .mainbody .border
+{
+  height: 70%;
+  width:350px;
+  border: 2px solid  rgb(221,222,224);
+  padding:5% 25px ;
+}
+.right .project .pro_left .mainbody .border>div td{
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid  rgb(221,222,224);
+}
+.right .project .pro_left .mainbody .border>div td:hover{
+  background-color: rgb(244,246,247);
+}
+.right .project .pro_left .mainbody .border>div table{
+
+    border-collapse:collapse;
+}
+.right .project .pro_right .insidecontent{
+
+  width: 100%;
+  height: 240px;
+  border-bottom: 1px solid  rgb(221,222,224);
+}
+.right .project .pro_right .insidecontent .font1,.font1{
+  color: #c3c2c2;
+  font-size: 12px;
+  height:20px;
+  line-height: 20px;
+  padding-left: 2%;
+  margin: 0px;
+  width: 98%;
+
+  background-color: white;
+}
+.right .project .pro_right .insidecontent .font2{
+  color: #535353;
+  font-size: 12px;
+  height:20px;
+  line-height: 20px;
+  padding-left: 2%;
+  margin: 0px;
+  width: 98%;
+  background-color: white;
+}
+.right .project .pro_right .insidecontent .price_responsibility{
+  border-top: 1px solid  rgb(221,222,224);
+  border-bottom: 1px solid  rgb(221,222,224);
+  height: 60px;
+  clear: both;
+
+}
+.right .project .pro_right .insidecontent .price_responsibility .price_p1{
+  float: left;
+  width: 40%;
+  height: 60px;
+  border-right: 1px solid  rgb(221,222,224);
+  background-color: white;
+  padding:none;
+}
+.right .project .pro_right .insidecontent .price_responsibility .price_p2{
+  float: right;
+  width: 48%;
+  background-color: white;
+}
+.right .project .pro_right .insidecontent .price_responsibility p .font1{
+  display: inline-block;
+  color: #c3c2c2;
+  font-size: 12px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.right .project .pro_right .insidecontent .price_responsibility p .font2{
+  color: #535353;
+  font-size: 12px;
+  margin: 0px;
+  padding: 0px;
+  display: inline-block;
+
+}
+
+.right .project .pro_right #checkbox1
+{
+  vertical-align: middle;
+  padding: 0px;
+
+}
+
+.right .project .pro_right .pro_form  label
+{
+vertical-align: middle;
+
+}
+.right .calendar .pro_left{
+  width: 40%;
+  float: left;
+}
+.right  .calendar  .mainbody{
+  width: 90%;
+  height: 280px;
+  padding: 40px 5% 20px;
+  background-color: white;
+  border-radius: 5px;
+}
+  .right .calendar .pro_left .mainbody select{
+    width: 24%;
+    height: 20px;
+  }
+    .right .calendar .pro_left .mainbody button{
+      width: 20%;
+      height: 20px;
+    }
+        .right .calendar .pro_left .mainbody table{
+          margin-top: 10px;
+          padding-top: 3px;
+          border-top: 1px solid rgb(169,207,236);
+          width: 100%;
+        }
+                  .right .calendar .pro_left .mainbody table th{
+                    border: none;
+                  }
+          .right .calendar .pro_left .mainbody table td{
+              border: 1px solid white;
+          }
+                .right .calendar .pro_left .mainbody table td p{
+                  text-align: center;
+                  background-color: white;
+                  height: 21px;
+
+                }
+                .right .calendar .pro_left .mainbody table td:hover{
+                  border: 1px solid rgb(247,213,100);
+                }
+        .right .calendar .pro_left .mainbody hr{
+          position: relative;
+          top:38px;
+        }
+.right .calendar .pro_right{
+    width: 58%;
+  float: right;
+}
+.right .calendar .pro_right table{
+  width:100%;
+  height: auto;
+  border-collapse:collapse;
+}
+.right .calendar .pro_right .table2 td,th{
+  text-align: center;
+  border: 1px solid rgb(203,203,203);
+  line-height: 20px;
+  height: 20px;
+  padding: 0px;
+  margin: 0px;
+}
+.right .calendar .pro_right .table2 td p{
+  float: left;
+  width: 25%;
+  line-height: 30px;
+  font-size: 12px;
+  background-color: white;
+  color:black;
+  vertical-align: middle;
+  padding: 0px;
+  margin: 0px;
+}
+.right .calendar .pro_right .table2 td div{
+  width: 69%;
+  height: 5px;
+  margin: 12.5px 7.5px 12.5px 0;
+  background-color: rgb(220,220,220);
+  float: right;
+  padding: 0px;
+}
+.right .calendar .pro_right .table2 td div .red{
+  background-color: red;
+  display: inline-block;
+  height: 5px;
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+  bottom: 11px;
+  right:20px;
+}
